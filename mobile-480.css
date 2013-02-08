@@ -1,0 +1,10 @@
+body
+{
+  -webkit-text-size-adjust: none;
+  padding: 5px;
+}
+
+.sidebar, #sidebar
+{
+  display: none;
+}
