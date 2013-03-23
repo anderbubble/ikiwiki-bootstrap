@@ -118,6 +118,7 @@ img.img {
 
 #editcontent {
     width: 98%;
+    font-family: monospace;
 }
 
 .editcontentdiv {
@@ -240,10 +241,6 @@ div.recentchanges {
 .sidebar ul, #sidebar ul
 {
     margin-right: 1em;
-}
-
-.sidebar ul, #sidebar ul
-{
     padding-left: 0;
     list-style-type: none;
 }
@@ -613,9 +610,14 @@ body
     margin: 0;
   }
 
-  .sidebar, #sidebar
+  .pageheader, .sidebar, #sidebar
   {
-    float: right;
+    display: none;
+  }
+
+  .sidebar  li, #sidebar li
+  {
+    display: inline-block;
   }
 
   #pagebody
@@ -623,5 +625,33 @@ body
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+  }
+ 
+  body, #editcontent, a
+  {
+    font-size: 2em;
+  }
+
+  #editcontent
+  {
+    display: block;
+    width: 100%;
+    border: none;
+    margin: none;
+    padding: none;
+  }
+
+  input
+  {
+    font-size: 2em;
+    display: block;
+    width: 100%;
+    margin-top: .4em;
+    margin-bottom: .4em;
+  }
+
+  input#editmessage, label[for=editmessage]
+  {
+    display: none;
   }
 }
