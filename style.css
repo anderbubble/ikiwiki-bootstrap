@@ -72,6 +72,18 @@ nav {
     clear: both;
 }
 
+.pagefooter
+{
+    font-size: small;
+    text-align: right;
+}
+
+.inlinefooter
+{
+    text-align: right;
+    font-size: small;
+}
+
 #pageinfo {
     margin: 1em 0;
     border-top: 1px solid #000;
@@ -111,6 +123,11 @@ img.img {
     margin-top: 1em;
 }
 
+#backlinks
+{
+    display: none;
+}
+
 #searchform {
     display: inline;
     float: right;
@@ -128,6 +145,13 @@ img.img {
 
 img {
     border-style: none;
+}
+
+#content
+{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #content img.right, table.img.right
@@ -226,27 +250,23 @@ div.recentchanges {
     color: #C00;
 }
 
-.sidebar, #sidebar
+.sidebar
 {
-    width: 10em;
-    margin-top: 5em;
     padding: 0;
     background: white;
     color: black !important;
-    float: left;
     border: none;
-    text-align: right;
 }
 
-.sidebar ul, #sidebar ul
+.sidebar ul
 {
-    margin-right: 1em;
     padding-left: 0;
     list-style-type: none;
 }
 
-.sidebar ul li, #sidebar ul li
+.sidebar ul li
 {
+    display: inline-block;
     padding-left: .4em;
     padding-right: .4em;
 }
@@ -450,8 +470,9 @@ li.L8 { list-style: upper-alpha; }
 
 /* tag cloud */
 .pagecloud {
-    float: right;
     width: 30%;
+    margin-left: auto;
+    margin-right: 0;
     text-align: center;
     padding: 10px 10px;
     border: 1px solid #aaa;
@@ -572,7 +593,7 @@ a.openid_large_btn:focus {
     text-align: right;
 }
 
-#feedlink
+.feedlink, #feedlink
 {
     display: none;
 }
@@ -596,11 +617,6 @@ body
     margin-right: 6em;
 }
 
-#pagebody
-{
-    margin-left: 10em;
-}
-
 @media screen and (max-device-width: 480px)
 {
   body
@@ -608,23 +624,6 @@ body
     -webkit-text-size-adjust: auto;
     padding: 5px;
     margin: 0;
-  }
-
-  .pageheader, .sidebar, #sidebar
-  {
-    display: none;
-  }
-
-  .sidebar  li, #sidebar li
-  {
-    display: inline-block;
-  }
-
-  #pagebody
-  {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
   }
  
   body, #editcontent, a
