@@ -8,6 +8,8 @@
 </TMPL_IF>
 <meta charset="utf-8" />
 <title><TMPL_VAR TITLE></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" media="screen" href="<TMPL_VAR BASEURL>/bootstrap/css/bootstrap.min.css" />
 <TMPL_IF FAVICON>
 <link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
 </TMPL_IF>
@@ -201,5 +203,7 @@ Last edited <TMPL_VAR MTIME>
 
 </article>
 
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="<TMPL_VAR BASEURL>/bootstrap/js/bootstrap.min.js"></script> 
 </body>
 </html>
