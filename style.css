@@ -72,16 +72,11 @@ nav {
     clear: both;
 }
 
-.pagefooter
+.pagefooter, .inlinefooter
 {
     font-size: small;
     text-align: right;
-}
-
-.inlinefooter
-{
-    text-align: right;
-    font-size: small;
+    margin-top: 1em;
 }
 
 #pageinfo {
@@ -243,7 +238,6 @@ div.recentchanges {
 .pagecopyright {
     font-style: italic;
     display: block;
-    margin-top: 1em;
 }
 
 .error {
