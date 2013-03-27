@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <TMPL_IF DYNAMIC>
 <TMPL_IF FORCEBASEURL><base href="<TMPL_VAR FORCEBASEURL>" /><TMPL_ELSE>
@@ -10,6 +11,7 @@
 <title><TMPL_VAR TITLE></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" media="screen" href="<TMPL_VAR BASEURL>/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" media="screen" href="<TMPL_VAR BASEURL>/bootstrap/css/bootstrap-responsive.css" />
 <TMPL_IF FAVICON>
 <link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
 </TMPL_IF>
@@ -35,11 +37,13 @@
 </TMPL_IF>
 </TMPL_LOOP>
 </head>
+
 <body>
 
-<article class="page">
+<article class="page container">
 
-<section class="pageheader">
+<section class="pageheader row">
+<div class="span12">
 <header class="header">
 <span>
 <span class="parentlinks">
@@ -111,17 +115,17 @@
 </TMPL_IF>
 
 <TMPL_VAR TRAILS>
-
+</div>
 </section>
 
+<div class="row">
 <TMPL_IF SIDEBAR>
-<aside class="sidebar">
+<aside class="sidebar span1">
 <TMPL_VAR SIDEBAR>
 </aside>
 </TMPL_IF>
 
-<div id="pagebody">
-
+<div id="pagebody" class="<TMPL_IF SIDEBAR>span11<TMPL_ELSE>span12</TMPL_IF>">
 <section id="content">
 <TMPL_VAR CONTENT>
 </section>
@@ -140,10 +144,11 @@
 </section>
 </TMPL_IF>
 </TMPL_UNLESS>
-
+</div>
 </div>
 
-<footer id="footer" class="pagefooter">
+<footer id="footer" class="pagefooter row">
+<div class="span12">
 <TMPL_UNLESS DYNAMIC>
 <nav id="pageinfo">
 
@@ -199,6 +204,7 @@ Last edited <TMPL_VAR MTIME>
 <TMPL_IF EXTRAFOOTER><TMPL_VAR EXTRAFOOTER></TMPL_IF>
 </TMPL_UNLESS>
 <!-- from <TMPL_VAR WIKINAME> -->
+</div>
 </footer>
 
 </article>
@@ -206,4 +212,5 @@ Last edited <TMPL_VAR MTIME>
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="<TMPL_VAR BASEURL>/bootstrap/js/bootstrap.min.js"></script> 
 </body>
+
 </html>
