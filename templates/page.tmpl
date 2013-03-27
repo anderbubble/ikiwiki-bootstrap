@@ -44,7 +44,7 @@
 
 <section class="pageheader row">
 <div class="span12">
-<header class="header">
+<header class="title header">
 <span>
 <span class="parentlinks">
 <TMPL_LOOP PARENTLINKS>
@@ -65,7 +65,7 @@
 
 <TMPL_IF HAVE_ACTIONS>
 <nav class="actions">
-<ul>
+<ul class="inline">
 <TMPL_IF EDITURL>
 <li><a href="<TMPL_VAR EDITURL>" rel="nofollow">Edit</a></li>
 </TMPL_IF>
@@ -125,10 +125,7 @@
 </aside>
 </TMPL_IF>
 
-<div id="pagebody" class="<TMPL_IF SIDEBAR>span11<TMPL_ELSE>span12</TMPL_IF>">
-<section id="content">
-<TMPL_VAR CONTENT>
-</section>
+<div id="pagebody" class="<TMPL_IF SIDEBAR>span11<TMPL_ELSE>span12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
 
 <TMPL_UNLESS DYNAMIC>
 <TMPL_IF COMMENTS>

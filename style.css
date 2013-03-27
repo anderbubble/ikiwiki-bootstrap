@@ -1,10 +1,9 @@
-/* html5 compat */
-.header {
+.header
+{
     margin: 0;
     font-size: 22px;
     font-weight: bold;
     line-height: 1em;
-    display: block;
 }
 
 .pageheader
@@ -12,126 +11,131 @@
     margin-bottom: 1em;
 }
 
-.pageheader > .header
+.inlineheader .author
 {
-    display: none;
-}
-
-.inlineheader .author {
     margin: 0;
     font-size: 18px;
     font-weight: bold;
     display: block;
 }
 
-.actions ul {
-    margin: 0;
-    padding: 6px .4em;
-    height: 1em;
-    list-style-type: none;
-}
-.actions li {
-    display: inline;
-    padding: .2em;
-}
-.pageheader .actions ul {
+.pageheader .actions ul
+{
     border-bottom: 1px solid #000;
 }
 
-.inlinepage .actions ul {
+.inlinepage .actions ul
+{
     border-bottom: 0;
 }
 
-#otherlanguages ul {
+#otherlanguages ul
+{
     margin: 0;
     padding: 6px;
     list-style-type: none;
 }
-#otherlanguages li {
+
+#otherlanguages li
+{
     display: inline;
     padding: .2em .4em;
 }
-.pageheader #otherlanguages {
+
+.pageheader #otherlanguages
+{
     border-bottom: 1px solid #000;
 }
 
-.inlinecontent {
+.inlinecontent
+{
     margin-top: .4em;
 }
 
 .pagefooter,
 .inlinefooter,
-.comments {
+.comments
+{
     clear: both;
 }
 
-.pagefooter, .inlinefooter
+.pagefooter,
+.inlinefooter
 {
     font-size: small;
     text-align: right;
     margin-top: 1em;
 }
 
-#pageinfo {
+#pageinfo
+{
     margin: 1em 0;
     border-top: 1px solid #000;
 }
 
-.tags {
+.tags
+{
     margin-top: 1em;
 }
 
-.inlinepage .tags {
+.inlinepage .tags
+{
     display: inline;
 }
 
-.mapparent {
+.mapparent
+{
     text-decoration: none;
 }
 
-.img caption {
+.img caption
+{
     font-size: 80%;
     caption-side: bottom;
     text-align: center;
 }
 
-img.img {
+img.img
+{
     margin: 0.5ex;
 }
 
-.align-left {
+.align-left
+{
     float:left;
 }
 
-.align-right {
+.align-right
+{
     float:right;
-}
-
-#backlinks {
-    margin-top: 1em;
 }
 
 #backlinks
 {
+    margin-top: 1em;
     display: none;
 }
 
-#searchform {
+#searchform
+{
     display: inline;
     float: right;
 }
 
-#editcontent {
+#editcontent
+{
     width: 98%;
     font-family: monospace;
 }
 
-.editcontentdiv {
+.editcontentdiv
+{
     width: auto;
     overflow: auto;
 }
 
-img {
+img
+{
     border-style: none;
 }
 
@@ -142,12 +146,14 @@ img {
     margin-right: auto;
 }
 
-#content img.right, table.img.right
+#content img.right,
+table.img.right
 {
     float: right;
 }
 
-#content img.left, table.img.left
+#content img.left,
+table.img.left
 {
     float: left;
 }
@@ -157,11 +163,13 @@ img {
     float: none;
 }
 
-pre {
+pre
+{
     overflow: auto;
 }
 
-div.recentchanges {
+div.recentchanges
+{
     border-style: solid;
     border-width: 1px;
     overflow: auto;
@@ -170,10 +178,12 @@ div.recentchanges {
     background: #eee;
     color: black !important;
 }
-.recentchanges .metadata {
+.recentchanges .metadata
+{
     padding: 0px 0.5em;
 }
-.recentchanges .changelog {
+.recentchanges .changelog
+{
     font-style: italic;
     clear: both;
     display: block;
@@ -181,36 +191,43 @@ div.recentchanges {
     background: white !important;
     color: black !important;
 }
-.recentchanges .desc {
+.recentchanges .desc
+{
     display: none;
 }
-.recentchanges .diff {
+.recentchanges .diff
+{
     display: none;
 }
-.recentchanges .committer {
+.recentchanges .committer
+{
     float: left;
     margin: 0;
     width: 40%;
 }
-.recentchanges .committype {
+.recentchanges .committype
+{
     float: left;
     margin: 0;
     width: 5%;
     font-size: small;
 }
-.recentchanges .changedate {
+.recentchanges .changedate
+{
     float: left;
     margin: 0;
     width: 35%;
     font-size: small;
 }
-.recentchanges .pagelinks {
+.recentchanges .pagelinks
+{
     float: right;
     margin: 0;
     width: 60%;
 }
 
-#blogform {
+#blogform
+{
     padding: 10px 10px;
     border: 1px solid #aaa;
     background: #eee;
@@ -219,7 +236,8 @@ div.recentchanges {
     overflow: auto;
 }
 
-.inlinepage {
+.inlinepage
+{
     margin-top: 1em;
     padding: 0;
     border: none;
@@ -228,12 +246,14 @@ div.recentchanges {
 
 .pagedate,
 .pagelicense,
-.pagecopyright {
+.pagecopyright
+{
     font-style: italic;
     display: block;
 }
 
-.error {
+.error
+{
     color: #C00;
 }
 
@@ -244,54 +264,50 @@ div.recentchanges {
     border: none;
 }
 
-.sidebar ul
+hr.poll
 {
-    padding-left: 0;
-    list-style-type: none;
-}
-
-.sidebar ul li
-{
-    padding-left: .4em;
-    padding-right: .4em;
-}
-
-hr.poll {
     height: 10pt;
     color: white !important;
     background: #eee;
     border: 2px solid black;
 }
-div.poll {
+div.poll
+{
     margin-top: 1ex;
     margin-bottom: 1ex;
     padding: 1ex 1ex;
     border: 1px solid #aaa;
 }
 
-span.color {
+span.color
+{
     padding: 2px;
 }
 
 .comment-header,
-.microblog-header {
+.microblog-header
+{
     font-style: italic;
     margin-top: .3em;
 }
 .comment .author,
-.microblog .author {
+.microblog .author
+{
     font-weight: bold;
 }
-.comment-subject {
+.comment-subject
+{
     font-weight: bold;
     display: none;
 }
-.comment {
+.comment
+{
     border: 1px solid #aaa;
     padding: 3px;
 }
 
-div.progress {
+div.progress
+{
     margin-top: 1ex;
     margin-bottom: 1ex;
     border: 1px solid #888;
@@ -300,7 +316,8 @@ div.progress {
     color: black !important;
     padding: 1px;
 }
-div.progress-done {
+div.progress-done
+{
     background: #ea6 !important;
     color: black !important;
     text-align: center;
@@ -308,7 +325,8 @@ div.progress-done {
 }
 
 /* things to hide in printouts */
-@media print {
+@media print
+{
     .actions { display: none; }
     .tags { display: none; }
     .feedbutton { display: none; }
@@ -318,7 +336,8 @@ div.progress-done {
 }
 
 /* infobox template */
-.infobox {
+.infobox
+{
     float: right;
     margin-left: 2ex;
     margin-top: 1ex;
@@ -330,7 +349,8 @@ div.progress-done {
 }
 
 /* notebox template */
-.notebox {
+.notebox
+{
     float: right;
     margin-left: 2ex;
     margin-top: 1ex;
@@ -343,17 +363,20 @@ div.progress-done {
 }
 
 /* popup template and backlinks hiding */
-.popup {
+.popup
+{
     border-bottom: 1px dotted #366;
     color: #366;
 }
 .popup .balloon,
 .popup .paren,
-.popup .expand {
+.popup .expand
+{
     display: none;
 }
 .popup:hover .balloon,
-.popup:focus .balloon {
+.popup:focus .balloon
+{
     position: absolute;
     display: inline;
     margin: 1em 0 0 -2em;
@@ -364,31 +387,38 @@ div.progress-done {
 }
 
 /* form styling */
-fieldset {
+fieldset
+{
     margin: 1ex 0;
     border: 1px solid black;
 }
-legend {
+legend
+{
     padding: 0 1ex;
 }
-.fb_submit {
+.fb_submit
+{
     float: left;
     margin: 2px 0;
 }
-label.block {    
+label.block
+{    
     display: block;   
 }
-label.inline {    
+label.inline
+{    
     display: inline;
 }
-input#openid_identifier {
+input#openid_identifier
+{
     background: url(wikiicons/openidlogin-bg.gif) no-repeat;
     background-color: #fff;
     background-position: 0 50%;
     color: #000;
     padding-left: 18px;
 }
-input#searchbox {
+input#searchbox
+{
     background: url(wikiicons/search-bg.gif) no-repeat;
     background-color: #fff;
     background-position: 100% 50%;
@@ -396,12 +426,14 @@ input#searchbox {
     padding-right: 16px;
 }
 /* invalid form fields */
-.fb_invalid {
+.fb_invalid
+{
     color: red;
     background: white !important;
 }
 /* required form fields */
-.fb_required {
+.fb_required
+{
     font-weight: bold;
 }
 
@@ -424,20 +456,23 @@ pre.hl { color:#000000; background-color:#ffffff; }
 
 /* calendar plugin */
 .month-calendar-day-this-day,
-.year-calendar-this-month {
+.year-calendar-this-month
+{
     background-color: #eee;
 }
 .month-calendar-day-head,
 .month-calendar-day-nolink,
 .month-calendar-day-link,
 .month-calendar-day-this-day,
-.month-calendar-day-future {
+.month-calendar-day-future
+{
     text-align: right;
 }
 .month-calendar-arrow A:link,
 .year-calendar-arrow A:link,
 .month-calendar-arrow A:visited,
-.year-calendar-arrow A:visited {
+.year-calendar-arrow A:visited
+{
     text-decoration: none;
     font-weight: normal;
     font-size: 150%;
@@ -454,7 +489,8 @@ li.L7 { list-style: lower-roman; }
 li.L8 { list-style: upper-alpha; }
 
 /* tag cloud */
-.pagecloud {
+.pagecloud
+{
     max-width: 25em;
     margin-left: auto;
     margin-right: 0;
@@ -471,7 +507,8 @@ li.L8 { list-style: upper-alpha; }
 .biggestPC { font-size: 130%; }
 
 /* orange feed button */
-.feedbutton {
+.feedbutton
+{
     background: #ff6600;
     color: white !important;
     border-left: 1px solid #cc9966;
@@ -479,51 +516,61 @@ li.L8 { list-style: upper-alpha; }
     border-right: 1px solid #993300;
     border-bottom: 1px solid #331100;
     padding: 0px 0.5em 0px 0.5em;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: small;
     text-decoration: none;
     margin-top: 1em;
 }
-.feedbutton:hover {
+.feedbutton:hover
+{
     color: white !important;
     background: #ff9900;
 }
 
 /* openid selector */
-#openid_choice {
+#openid_choice
+{
     display: none;
 }
-#openid_input_area {
+#openid_input_area
+{
     clear: both;
     padding: 10px;
 }
-#openid_btns, #openid_btns br {
+#openid_btns,
+#openid_btns br
+{
     clear: both;
 }
-#openid_highlight {
+#openid_highlight
+{
     background-color: black;
     float: left;
 }
-.openid_large_btn {
+.openid_large_btn
+{
     padding: 1em 1.5em;
     border: 1px solid #DDD;
     margin: 3px;
     float: left;
 }
-.openid_small_btn {
+.openid_small_btn
+{
     padding: 4px 4px;
     border: 1px solid #DDD;
     margin: 3px;
     float: left;
 }
-a.openid_large_btn:focus {
+a.openid_large_btn:focus
+{
     outline: none;
 }
-a.openid_large_btn:focus {
+a.openid_large_btn:focus
+{
     -moz-outline-style: none;
 }
-.openid_selected {
+.openid_selected
+{
     border: 4px solid #DDD;
 }
 .comment
@@ -578,28 +625,26 @@ a.openid_large_btn:focus {
     text-align: right;
 }
 
-.feedlink, #feedlink
+.feedlink,
+#feedlink
 {
     display: none;
 }
 
-a
-{
-    text-decoration: none;
-}
-
-a:hover
-{
-    text-decoration: underline;
-}
-
 body
 {
-    font-family: helvetica, arial, sans-serif;
     margin-top: 4em;
     margin-bottom: 4em;
     margin-left: 6em;
     margin-right: 6em;
+}
+
+@media screen
+{
+    .pageheader .title.header
+    {
+        display: none;
+    }
 }
 
 @media screen and (max-device-width: 480px)
