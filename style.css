@@ -1,14 +1,22 @@
+body
+{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+}
+
 .header
 {
     margin: 0;
     font-size: 22px;
     font-weight: bold;
-    line-height: 1em;
+    line-height: 1rem;
 }
 
 .pageheader
 {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .inlineheader .author
@@ -39,7 +47,7 @@
 #otherlanguages li
 {
     display: inline;
-    padding: .2em .4em;
+    padding: .2rem .4rem;
 }
 
 .pageheader #otherlanguages
@@ -49,7 +57,7 @@
 
 .inlinecontent
 {
-    margin-top: .4em;
+    margin-top: .4rem;
 }
 
 .pagefooter,
@@ -64,18 +72,18 @@
 {
     font-size: small;
     text-align: right;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 #pageinfo
 {
-    margin: 1em 0;
+    margin: 1rem 0;
     border-top: 1px solid #000;
 }
 
 .tags
 {
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .inlinepage .tags
@@ -95,24 +103,9 @@
     text-align: center;
 }
 
-img.img
-{
-    margin: 0.5ex;
-}
-
-.align-left
-{
-    float:left;
-}
-
-.align-right
-{
-    float:right;
-}
-
 #backlinks
 {
-    margin-top: 1em;
+    margin-top: 1rem;
     display: none;
 }
 
@@ -122,45 +115,24 @@ img.img
     float: right;
 }
 
-#editcontent
+#editcontent, #editmessage
 {
-    width: 98%;
+    box-sizing: border-box;
+    display: block;
     font-family: monospace;
+    width: 100%;
 }
 
 .editcontentdiv
 {
-    width: auto;
-    overflow: auto;
-}
-
-img
-{
-    border-style: none;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 #content
 {
-    width: 80%;
     margin-left: auto;
     margin-right: auto;
-}
-
-#content img.right,
-table.img.right
-{
-    float: right;
-}
-
-#content img.left,
-table.img.left
-{
-    float: left;
-}
-
-.img img
-{
-    float: none;
 }
 
 pre
@@ -180,7 +152,7 @@ div.recentchanges
 }
 .recentchanges .metadata
 {
-    padding: 0px 0.5em;
+    padding: 0px 0.5rem;
 }
 .recentchanges .changelog
 {
@@ -238,7 +210,7 @@ div.recentchanges
 
 .inlinepage
 {
-    margin-top: 1em;
+    margin-top: 1rem;
     padding: 0;
     border: none;
     overflow: auto;
@@ -262,6 +234,19 @@ div.recentchanges
     background: white;
     color: black !important;
     border: none;
+}
+
+.sidebar li
+{
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0,0,0,0.15);
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    margin: 0 0 5px;
+    padding: 9.5px;
+    width: 100%;
+    text-align: center;
 }
 
 hr.poll
@@ -288,7 +273,7 @@ span.color
 .microblog-header
 {
     font-style: italic;
-    margin-top: .3em;
+    margin-top: .3rem;
 }
 .comment .author,
 .microblog .author
@@ -379,8 +364,8 @@ div.progress-done
 {
     position: absolute;
     display: inline;
-    margin: 1em 0 0 -2em;
-    padding: 0.625em;
+    margin: 1rem 0 0 -2rem;
+    padding: 0.625rem;
     border: 2px solid;
     background-color: #dee;
     color: black;
@@ -491,7 +476,7 @@ li.L8 { list-style: upper-alpha; }
 /* tag cloud */
 .pagecloud
 {
-    max-width: 25em;
+    max-width: 25rem;
     margin-left: auto;
     margin-right: 0;
     text-align: center;
@@ -515,11 +500,11 @@ li.L8 { list-style: upper-alpha; }
     border-top: 1px solid #ccaa99;
     border-right: 1px solid #993300;
     border-bottom: 1px solid #331100;
-    padding: 0px 0.5em 0px 0.5em;
+    padding: 0px 0.5rem 0px 0.5rem;
     font-weight: bold;
     font-size: small;
     text-decoration: none;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 .feedbutton:hover
 {
@@ -549,7 +534,7 @@ li.L8 { list-style: upper-alpha; }
 }
 .openid_large_btn
 {
-    padding: 1em 1.5em;
+    padding: 1rem 1.5rem;
     border: 1px solid #DDD;
     margin: 3px;
     float: left;
@@ -589,7 +574,7 @@ a.openid_large_btn:focus
 {
     visibility: visible;
     position: absolute;
-    right: 0em;
+    right: 0rem;
 }
 
 .comment-header .author:before
@@ -605,17 +590,17 @@ a.openid_large_btn:focus
 
 .comment .actions ul
 {
-    padding: 0em;
+    padding: 0rem;
 }
 
 .comment .actions ul li
 {
-    padding: 0em;
+    padding: 0rem;
 }
 
 #comments
 {
-    width: 35em;
+    width: 35rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -631,12 +616,28 @@ a.openid_large_btn:focus
     display: none;
 }
 
-body
+img.right,
+table.align-right
 {
-    margin-top: 4em;
-    margin-bottom: 4em;
-    margin-left: 6em;
-    margin-right: 6em;
+    float: right;
+    clear: right;
+    margin-left: 1rem;
+}
+
+img.left,
+table.align-left
+{
+    float: left;
+    clear: left;
+    margin-right: 1rem;
+}
+
+img.center,
+table.align-center
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen
@@ -651,26 +652,37 @@ body
 {
     body
     {
-        -webkit-text-size-adjust: auto;
-        padding: 5px;
+        padding: .5rem;
         margin: 0;
+    }
+
+    /* disable auto-zoom */
+    input[type='text'], input[type='number'], textarea
+    {
+        font-size: 16px;
     }
 
     #editcontent
     {
-        display: block;
-        width: 100%;
-        border: none;
         margin: none;
         padding: none;
     }
 
-    input
+    #content img.right,
+    table.img.right
     {
-        font-size: 2em;
+        float: none;
         display: block;
-        width: 100%;
-        margin-top: .4em;
-        margin-bottom: .4em;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #content img.left,
+    table.img.left
+    {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

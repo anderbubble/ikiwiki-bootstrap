@@ -120,12 +120,12 @@
 
 <div class="row">
 <TMPL_IF SIDEBAR>
-<aside class="sidebar span1">
+<aside class="sidebar span2">
 <TMPL_VAR SIDEBAR>
 </aside>
 </TMPL_IF>
 
-<div id="pagebody" class="<TMPL_IF SIDEBAR>span11<TMPL_ELSE>span12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
+<div id="pagebody" class="<TMPL_IF SIDEBAR>span10<TMPL_ELSE>span12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
 
 <TMPL_UNLESS DYNAMIC>
 <TMPL_IF COMMENTS>
@@ -205,9 +205,6 @@ Last edited <TMPL_VAR MTIME>
 </footer>
 
 </article>
-
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="<TMPL_VAR BASEURL>/bootstrap/js/bootstrap.min.js"></script> 
 </body>
 
 </html>
