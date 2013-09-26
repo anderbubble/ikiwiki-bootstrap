@@ -10,8 +10,10 @@
 <meta charset="utf-8" />
 <title><TMPL_VAR TITLE></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" media="screen" href="<TMPL_VAR BASEURL>/bootstrap/css/bootstrap.min.css" />
-<link rel="stylesheet" media="screen" href="<TMPL_VAR BASEURL>/bootstrap/css/bootstrap-responsive.css" />
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 <TMPL_IF FAVICON>
 <link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
 </TMPL_IF>
@@ -43,7 +45,7 @@
 <article class="page container">
 
 <section class="pageheader row">
-<div class="span12">
+<div class="col-md-12">
 <header class="title header">
 <span>
 <span class="parentlinks">
@@ -65,7 +67,7 @@
 
 <TMPL_IF HAVE_ACTIONS>
 <nav class="actions">
-<ul class="inline">
+<ul class="list-inline">
 <TMPL_IF EDITURL>
 <li><a href="<TMPL_VAR EDITURL>" rel="nofollow">Edit</a></li>
 </TMPL_IF>
@@ -120,12 +122,12 @@
 
 <div class="row">
 <TMPL_IF SIDEBAR>
-<aside class="sidebar span2">
+<aside class="sidebar col-md-2">
 <TMPL_VAR SIDEBAR>
 </aside>
 </TMPL_IF>
 
-<div id="pagebody" class="<TMPL_IF SIDEBAR>span10<TMPL_ELSE>span12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
+<div id="pagebody" class="<TMPL_IF SIDEBAR>col-md-10<TMPL_ELSE>col-md-12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
 
 <TMPL_UNLESS DYNAMIC>
 <TMPL_IF COMMENTS>
@@ -145,7 +147,7 @@
 </div>
 
 <footer id="footer" class="pagefooter row">
-<div class="span12">
+<div class="col-md-12">
 <TMPL_UNLESS DYNAMIC>
 <nav id="pageinfo">
 
