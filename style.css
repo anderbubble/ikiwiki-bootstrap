@@ -210,7 +210,7 @@ div.recentchanges
 .inlinepage
 {
     margin-top: 1rem;
-    padding: 0;
+    padding: 0 1rem;
     border: none;
     overflow: auto;
 }
