@@ -639,14 +639,6 @@ table.align-center
     margin-right: auto;
 }
 
-@media screen
-{
-    .pageheader .title.header
-    {
-        display: none;
-    }
-}
-
 @media screen and (max-device-width: 480px)
 {
     body
