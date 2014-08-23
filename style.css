@@ -228,26 +228,6 @@ div.recentchanges
     color: #C00;
 }
 
-.sidebar
-{
-    background: white;
-    color: black !important;
-    border: none;
-}
-
-.sidebar li
-{
-    box-sizing: border-box;
-    background-color: #f5f5f5;
-    border: 1px solid rgba(0,0,0,0.15);
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    margin: 0 0 5px;
-    padding: 9.5px;
-    width: 100%;
-    text-align: center;
-}
-
 hr.poll
 {
     height: 10pt;
@@ -255,6 +235,7 @@ hr.poll
     background: #eee;
     border: 2px solid black;
 }
+
 div.poll
 {
     margin-top: 1ex;
