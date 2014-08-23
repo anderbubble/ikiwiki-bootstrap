@@ -10,10 +10,10 @@
 <meta charset="utf-8" />
 <title><TMPL_VAR TITLE></title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
-<script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
-<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <TMPL_IF FAVICON>
 <link rel="icon" href="<TMPL_VAR BASEURL><TMPL_VAR FAVICON>" type="image/x-icon" />
 </TMPL_IF>
@@ -122,12 +122,12 @@
 
 <div class="row">
 <TMPL_IF SIDEBAR>
-<aside class="sidebar col-md-2">
+<aside class="sidebar col-md-3">
 <TMPL_VAR SIDEBAR>
 </aside>
 </TMPL_IF>
 
-<div id="pagebody" class="<TMPL_IF SIDEBAR>col-md-10<TMPL_ELSE>col-md-12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
+<div id="pagebody" class="<TMPL_IF SIDEBAR>col-md-9<TMPL_ELSE>col-md-12</TMPL_IF>"><section id="content"><TMPL_VAR CONTENT></section>
 
 <TMPL_UNLESS DYNAMIC>
 <TMPL_IF COMMENTS>
