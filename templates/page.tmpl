@@ -47,19 +47,19 @@
 <section class="pageheader row">
 <div class="col-md-12">
 <header class="title header">
-<span>
-<span class="parentlinks">
+
+<ol class="breadcrumb">
 <TMPL_LOOP PARENTLINKS>
-<a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a>/ 
+<li><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
 </TMPL_LOOP>
-</span>
-<span class="title">
+<li class="active">
 <TMPL_VAR TITLE>
 <TMPL_IF ISTRANSLATION>
 &nbsp;(<TMPL_VAR PERCENTTRANSLATED>%)
 </TMPL_IF>
-</span>
-</span>
+</li>
+</ol>
+
 <TMPL_IF SEARCHFORM>
 <TMPL_VAR SEARCHFORM>
 </TMPL_IF>
