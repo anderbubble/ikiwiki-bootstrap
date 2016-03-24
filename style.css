@@ -34,6 +34,30 @@ header.header
     border-bottom: 0;
 }
 
+.inlinepage .h1, .inlinepage h1 {
+    font-size: 30px
+}
+
+.inlinepage .h2, .inlinepage h2 {
+    font-size: 24px
+}
+
+.inlinepage .h3, .inlinepage h3 {
+    font-size: 18px
+}
+
+.inlinepage .h4, .inlinepage h4 {
+    font-size: 14px
+}
+
+.inlinepage .h5, .inlinepage h5 {
+    font-size: 12px
+}
+
+.inlinepage .h6, .inlinepage h6 {
+    font-size: 10px
+}
+
 #otherlanguages ul
 {
     margin: 0;
@@ -208,7 +232,7 @@ div.recentchanges
 .inlinepage
 {
     margin-top: 1rem;
-    padding: 0 1rem;
+    padding: 0;
     border: none;
     overflow: auto;
 }
