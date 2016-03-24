@@ -45,25 +45,6 @@
 <article class="page container">
 
 <section class="pageheader row">
-<div class="col-md-12">
-<header class="title header">
-
-<ol class="breadcrumb">
-<TMPL_LOOP PARENTLINKS>
-<li><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
-</TMPL_LOOP>
-<li class="active">
-<TMPL_VAR TITLE>
-<TMPL_IF ISTRANSLATION>
-&nbsp;(<TMPL_VAR PERCENTTRANSLATED>%)
-</TMPL_IF>
-</li>
-</ol>
-
-<TMPL_IF SEARCHFORM>
-<TMPL_VAR SEARCHFORM>
-</TMPL_IF>
-</header>
 
 <TMPL_IF HAVE_ACTIONS>
 <nav class="actions">
@@ -97,6 +78,28 @@
 </TMPL_IF>
 </ul>
 </nav>
+</TMPL_IF>
+
+<TMPL_IF PARENTLINKS>
+<ol class="breadcrumb">
+<TMPL_LOOP PARENTLINKS>
+<li><a href="<TMPL_VAR URL>"><TMPL_VAR PAGE></a></li>
+</TMPL_LOOP>
+<li class="active">
+</li>
+</ol>
+</TMPL_IF>
+
+<div class="col-md-12">
+<header class="title header"><h1>
+<TMPL_VAR TITLE>
+<TMPL_IF ISTRANSLATION>
+&nbsp;(<TMPL_VAR PERCENTTRANSLATED>%)
+</TMPL_IF>
+</h1></header>
+
+<TMPL_IF SEARCHFORM>
+<TMPL_VAR SEARCHFORM>
 </TMPL_IF>
 
 <TMPL_IF OTHERLANGUAGES>

@@ -6,11 +6,14 @@ body
     margin-right: 6rem;
 }
 
-.header
+.pageheader nav.actions
+{
+    text-align: right;
+}
+
+header.header
 {
     margin: 0;
-    font-size: 22px;
-    font-weight: bold;
 }
 
 .pageheader
@@ -24,11 +27,6 @@ body
     font-size: 18px;
     font-weight: bold;
     display: block;
-}
-
-.pageheader .actions
-{
-    border-bottom: thin solid black;
 }
 
 .inlinepage .actions ul
