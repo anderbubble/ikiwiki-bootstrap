@@ -735,3 +735,8 @@ table.align-center
 .bs-callout a.alert-link {
     font-weight: bold;
 }
+
+.footnote {
+    vertical-align: super;
+    font-size: smaller;
+}
